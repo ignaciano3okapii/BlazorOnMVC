@@ -1,0 +1,12 @@
+﻿
+<h3>Displayer</h3>
+
+<input @bind="text" @bind:event="oninput" class="my-2" /> @* Por defecto es onchange *@
+
+<p>@text</p>
+
+<Nested />
+
+@code {
+    private string text = "";
+}
